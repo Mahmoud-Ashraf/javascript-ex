@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Javascript Exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+<body>
+    <h1>Javascript Exercise</h1>
+    <section id="triangle-area" class="triangle-area">
+        <h2>Get The Area Of Triangle Ex.1</h2>
+        <h3>Type The 3 Sides Of The Triangle</h3>
+        <div class="input"></div>
+            <label for="side1">Side 1</label>
+            <input id="side1" name="side1" type="number">
+        </div>
+        <div class="input"></div>
+            <label for="side2">side 2</label>
+            <input id="side2" name="side2" type="number">
+        </div>
+        <div class="input"></div>
+            <label for="side3">Side 3</label>
+            <input id="side3" name="side3" type="number">
+        </div>
+        <h3 id="triangle-area-h3"></h3>
+        <span class="btn" onclick="triangleArea('triangle-area')">Get The Area</span>
+        <span class="btn" onclick="resetResult('triangle-area-h3')">Reset</span>
+    </section>
+    <section id="guess" class="guess">
+        <h2>Guess A Random Number From 1 To 10 Ex.2</h2>
+        <h3>Guess Random Integer Number From 1 To 10</h3>
+        <div class="input"></div>
+            <label for="your-number">Your Number</label>
+            <input id="your-number" name="your-number" type="number">
+        </div>
+        <h3 id="guess-h3"></h3>
+        <span class="btn" onclick="guess('guess')">Check</span>
+        <span class="btn" onclick="resetResult('guess-h3')">Reset</span>
+    </section>
+    <section id="div-mul" class="div-mul">
+        <h2>Multiplication And Division Ex.3</h2>
+        <h3>Please Type Your Two Numbers You Want To Multiply Or Divide</h3>
+        <div class="input"></div>
+            <label for="first-number">Number 1</label>
+            <input id="first-number" type="number" name="first-number">
+        </div>
+        <div class="input"></div>
+            <label for="second-number">Number 2</label>
+            <input id="second-number" type="number" name="second-number">
+        </div>
+        <h3 id="div-mul-h3"></h3>
+        <span class="btn" onclick="multiplication('div-mul')">Multiply</span>
+        <span class="btn" onclick="division('div-mul')">Divide</span>
+        <span class="btn" onclick="resetResult('div-mul-h3')">Reset</span>
+    </section>
+    <section id="temp-conversion" class="temp-conversion">
+        <h2>Convert Temperatures To And From Celsius, Fahrenheit Ex.4</h2>
+        <h3>Please Type Your Degree And Select It's Type</h3>
+        <div class="input"></div>
+            <label for="temp">Temperture</label>
+            <input id="temp" name="temp" type="number">
+            <select name="temp-type" id="temp-type">
+                <option value="c">C</option>
+                <option value="f">F</option>
+            </select>
+        </div>
+        <h3 id="temp-convertion-h3"></h3>
+        <span class="btn" onclick="tempreture('temp-conversion')">Convert</span>
+        <span class="btn" onclick="resetResult('temp-convertion-h3')">Reset</span>
+    </section>
+    <section class="file-extension" class="file-extension">
+        <h2>Get The Extension Of File Name Ex.5</h2>
+        <h3>Please Type Your File Name</h3>
+        <div class="input"></div>
+            <label for="file-name">File Name</label>
+            <input id="file-name" name="file-name" type="text">
+        </div>
+        <h3 id="file-extension-h3"></h3>
+        <span class="btn" onclick="fileExtention('file-extension')">Get Extension</span>
+        <span class="btn" onclick="resetResult('file-extension-h3')">Reset</span>
+    </section>
+    <section id="diffrence" class="diffrence">
+        <h2>Get The Diffrence From no.13 Ex.6</h2>
+        <h3>Please Type Your Number</h3>
+        <div class="input"></div>
+            <label for="number">Your Number</label>
+            <input id="number" name="number" type="number">
+        </div>
+        <h3 id="diffrence-h3"></h3>
+        <span class="btn" onclick="no13('diffrence')">Get Diffrence</span>
+        <span class="btn" onclick="resetResult('diffrence-h3')">Reset</span>
+    </section>
+    <section id="calc" class="calc">
+        <h2>Sum Ex.7</h2>
+        <h3>Please Type Your Two Numbers You Want To sum</h3>
+        <div class="input"></div>
+            <label for="calc1">Number 1</label>
+            <input id="calc1" type="number" name="calc1">
+        </div>
+        <div class="input"></div>
+            <label for="calc2">Number 2</label>
+            <input id="calc2" type="number" name="calc2">
+        </div>
+        <h3 id="calc-h3"></h3>
+        <span class="btn" onclick="sum('calc')">Sum</span>
+        <span class="btn" onclick="resetResult('calc-h3')">Reset</span>
+    </section>
+    <section id="check" class="check">
+        <h2>check Ex.8</h2>
+        <h3>Please Type Your Two Numbers You Want To Check If = 50</h3>
+        <div class="input"></div>
+            <label for="check1">Number 1</label>
+            <input id="check1" type="number" name="check1">
+        </div>
+        <div class="input"></div>
+            <label for="check2">Number 2</label>
+            <input id="check2" type="number" name="check2">
+        </div>
+        <h3 id="check-h3"></h3>
+        <span class="btn" onclick="check50('check')">Check</span>
+        <span class="btn" onclick="resetResult('check-h3')">Reset</span>
+    </section>
+    <section id="maxnum" class="maxnum">
+        <h2>Get The Max Number Ex.12</h2>
+        <div class="input"></div>
+            <label for="number1">number 1</label>
+            <input id="number1" name="number1" type="number">
+        </div>
+        <div class="input"></div>
+            <label for="number2">number 2</label>
+            <input id="number2" name="number2" type="number">
+        </div>
+        <div class="input"></div>
+            <label for="number3">number 3</label>
+            <input id="number3" name="number3" type="number">
+        </div>
+        <h3 id="maxnum-h3"></h3>
+        <span class="btn" onclick="maxnum('maxnum')">Get Max Number</span>
+        <span class="btn" onclick="resetResult('maxnum-h3')">Reset</span>
+    </section>
+    <section id="sumarr" class="sumarr">
+        <h2>Get The Sum Of Array Ex.14</h2>
+        <div class="input"></div>
+        <label for="num1">number 1</label>
+        <input id="num1" name="num1" type="number">
+        </div>
+        <div class="input"></div>
+        <label for="num2">number 2</label>
+        <input id="num2" name="num2" type="number">
+        </div>
+        <div class="input"></div>
+        <label for="num3">number 3</label>
+        <input id="num3" name="num3" type="number">
+        </div>
+        <h3 id="sumarr-h3"></h3>
+        <span class="btn" onclick="sumarr('sumarr')">Get The Sum Of Array</span>
+        <span class="btn" onclick="resetResult('sumarr-h3')">Reset</span>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
